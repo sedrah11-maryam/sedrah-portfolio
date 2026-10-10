@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intiial-scale=1.0">
+        <title>Syed Sedrah Maryam</title>
+     </head>
+
+     <body>
+    
+    <nav class="navbar">
+        <div class="logo">Syed Sedrah Maryam</div>
+
+        
+    </nav>
+
+    
+    <main>
+     <section class="hero">
+
+    <p class="hero-statement">
+    Exploring cloud technologies<br> 
+    and building toward scalable,<br>
+    intelligent infrastructure.
+</p>
+
+    <h1>Syed Sedrah Maryam</h1>
+
+    <span>Bachelor's in Cloud Computing &amp; Big Data</span>
+<div class="hero-nav">
+    <a href="#about" class="hero-nav-card">
+        <span class="nav-icon">✦</span>
+        <span>About</span>
+    </a>
+
+    <a href="#skills" class="hero-nav-card">
+        <span class="nav-icon">◇</span>
+        <span>Skills</span>
+    </a>
+
+    <a href="#projects" class="hero-nav-card">
+        <span class="nav-icon">↗</span>
+        <span>Projects</span>
+    </a>
+
+    <a href="#contact" class="hero-nav-card">
+        <span class="nav-icon">○</span>
+        <span>Contact</span>
+    </a>
+</div>
+</section>   
+        
+
+    <section id="about" class="about">
+
+        <h2>About</h2>
+
+        <p>
+            I initially planned to pursue Cyber Security, but somewhere along the way,
+            the idea of working with cloud technologies caught my attention and eventually
+            led me here. I’m drawn to the side of technology that works behind the interface —
+            building, managing, and understanding how systems, storage, and infrastructure
+            work together. I’m currently exploring technologies like HTML, C, and especially
+            Linux, while gradually building my understanding of cloud computing through
+            hands-on projects and experimentation.
+        </p>
+
+        <p class="fun-line">
+            Still figuring out the cloud, one terminal command at a time.
+        </p>
+<section id="skills" class="skills">
+
+    <h2>SKILLS</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-box">
+            <h3>Comfortable With</h3>
+            <p><span>01</span> HTML</p>
+            <p><span>02</span> C</p>
+            <p><span>03</span> Linux</p>
+            <p><span>04</span> Git &amp; GitHub</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Currently Learning</h3>
+            <p><span>01</span> CSS</p>
+            <p><span>02</span> Cloud Computing</p>
+            <p><span>03</span> AWS</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Exploring</h3>
+            <p><span>01</span> Cloud Infrastructure</p>
+            <p><span>02</span> DevOps</p>
+            <p><span>03</span> Cloud Security</p>
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</section>
+<section id="projects" class="projects">
+
+    <h2>PROJECTS</h2>
+
+    <div class="project-item">
+
+        <div class="project-number">01</div>
+
+        <div class="project-content">
+            <h3>Cloud Cost Calculator</h3>
+
+            <p>
+                A C-based project designed to estimate cloud-related costs
+                through user input and basic calculations, while exploring
+                programming fundamentals and practical cloud concepts.
+            </p>
+
+            <div class="project-tags">
+                <span>C</span>
+                <span>Cloud Computing</span>
+                <span>GitHub</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="project-item">
+        <div class="project-item">
+    <div class="project-number">03</div>
+
+    <div class="project-content">
+        <h3>Linux Web Server</h3>
+
+        <p>
+            A Linux-based web server configured using Ubuntu and Nginx,
+            with a custom webpage hosted and accessed through the server's
+            local network address.
+        </p>
+
+        <div class="project-tags">
+            <span>Linux</span>
+            <span>Nginx</span>
+            <span>HTML</span>
+            <span>Networking</span>
+        </div>
+    </div>
+</div>
+
+        <div class="project-number">02</div>
+
+        <div class="project-content">
+            <h3>Cloud Resource Monitor</h3>
+
+            <p>
+                A project focused on monitoring and understanding cloud
+                resource usage, combining programming fundamentals with
+                practical concepts around cloud infrastructure and system
+                resources.
+            </p>
+
+            <div class="project-tags">
+                <span>C</span>
+                <span>Linux</span>
+                <span>Cloud Computing</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+</main>
+<section id="contact" class="contact">
+
+    <h2>CONTACT</h2>
+
+    <p>
+        Have an idea, opportunity, or just want to connect?
+    </p>
+
+    <div class="contact-links">
+
+    <div class="contact-item">
+        <span>Email</span>
+        <p>sedrah1107@gmail.com</p>
+        <a href="sedrah1107@gmail.com">Open email →</a>
+    </div>
+
+    <div class="contact-item">
+        <span>GitHub</span>
+        <p>github.com/sedrah11-maryam</p>
+        <a href="https://github.com/sedrah11-maryam" target="_blank">View profile →</a>
+    </div>
+
+    <div class="contact-item">
+        <span>LinkedIn</span>
+        <p>linkedin.com/in/Sedrah Maryam</p>
+        <a href="https://www.linkedin.com/in/sedrah-maryam-234a83437" target="_blank">View profile →</a>
+    </div>
+
+</div>
+
+</section>
+<script>
+    const skillBoxes = document.querySelectorAll('.skill-box');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    skillBoxes.forEach(box => observer.observe(box));
+</script>
+</body>
+</html> 
